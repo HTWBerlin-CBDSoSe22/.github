@@ -32,3 +32,41 @@ Useful Links: https://www.youtube.com/watch?v=E0f9DUEN_jI&t=3s
 #### Testing possible incorrect requests
 - Use snippets on the right of Postman App
 - Test different values
+
+
+
+
+### Swagger
+#### Quick Info
+Quick Definition: Useful for documenting APIs, also allows to make requests via documentation
+
+**Dependency for Swagger:** 
+
+io.springfox -> springfox-swagger2, version: 3.0.0
+
+**Enabeling Swagger**
+
+Add tag "@EnableSwagger2" below tag "@SpringBootApplication" in Main Class to enable Swagger
+
+**Annotations Swagger will recognize**
+
+@GetMapping for GET endpoints, @PostMapping for POST endpoints, @PutMapping, @DeleteMapping, @PatchMapping ...
+
+Hide endpoints by prefacing with tag "@Hidden"
+
+**Using Swagger with Postman**
+
+To see Swagger documentation in Postman, use {port}/v2/api-docs after starting application
+
+#### SwaggerUI
+Quick Definition: HTML Swagger documentation
+
+**Dependency for Swagger:** 
+
+io.springfox -> springfox-boot-starter, version: 3.0.0
+
+**Using Swagger UI**
+
+For Swagger UI documentation, go to {port}/swagger-ui/ in your browser (the "/" being vital). You can also start HTTP requests from the interface without the need of Postman.
+
+
