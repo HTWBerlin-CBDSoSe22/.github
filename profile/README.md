@@ -15,6 +15,7 @@
 ## Quick Guides:
 
 ### Postman
+Quick Definition: Tool for working with/testing API.
 
 #### Testing API
 1. Run your API in IntelliJ
@@ -27,3 +28,7 @@
 8. View the output below in "Pretty" or "Raw"
 
 Useful Links: https://www.youtube.com/watch?v=E0f9DUEN_jI&t=3s
+
+#### Testing possible incorrect requests
+- Use snippets on the right of Postman App
+- Test different values
