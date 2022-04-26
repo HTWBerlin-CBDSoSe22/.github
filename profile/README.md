@@ -25,3 +25,5 @@
 6. Click "SEND"
 7. Status 200 OK: Means successful
 8. View the output below in "Pretty" or "Raw"
+
+Useful Links: https://www.youtube.com/watch?v=E0f9DUEN_jI&t=3s
