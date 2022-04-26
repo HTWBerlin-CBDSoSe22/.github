@@ -7,3 +7,21 @@
 ### IntelliJ
 - replace all ";" to "," for example
 - > command + R
+
+
+
+---
+
+## Quick Guides:
+
+### Postman
+
+#### Testing API
+1. Run your API in IntelliJ
+2. Open Postman App 
+3. Go to your collection or create one
+4. Add a request and name it "<<Collection_Name>> API Test" 
+5. Choose the GET-Method and enter your API e.g. "http://localhost:8080/YOUR_PATH"
+6. Click "SEND"
+7. Status 200 OK: Means successful
+8. View the output below in "Pretty" or "Raw"
