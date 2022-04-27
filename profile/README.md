@@ -5,7 +5,7 @@
 - checkout a new branch with an issue key e.g. `git checkout -b JRA-123-<branch-name>`
 
 ### IntelliJ
-- replace all ";" to "," for example
+- find and replace:
 - > command + R
 
 
