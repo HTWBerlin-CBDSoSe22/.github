@@ -9,7 +9,7 @@
 - > command + R
 
 ### REACT Bootstrap
-1. npx create-react-app <<project name>>
+1. npx create-react-app << project name >>
 2. npm install react-bootstrap bootstrap
 3. add bootstrap styles: go to project and open public/index.html and insert the following in the head section below the last link section
       <link
