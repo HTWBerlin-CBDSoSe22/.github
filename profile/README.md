@@ -8,6 +8,21 @@
 - find and replace:
 - > command + R
 
+### REACT Bootstrap
+1. npx create-react-app <<project name>>
+2. npm install react-bootstrap bootstrap
+3. add bootstrap styles: go to project and open public/index.html and insert the following in the head section below the last link section
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  
+### REACT Router
+1. npm instsall react-router-dom
+  
+Note: If you are using a npm version lower than 5.0.0 then add the "--save" flag to add the dependency to your package.json
 
 
 ---
