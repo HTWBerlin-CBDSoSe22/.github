@@ -23,6 +23,8 @@
 1. npm instsall react-router-dom
   
 Note: If you are using a npm version lower than 5.0.0 then add the "--save" flag to add the dependency to your package.json
+Note 2: Depending on version above or below 5, <Switch> and <Routes> sections changes: 
+        https://exerror.com/attempted-import-error-switch-is-not-exported-from-react-router-dom/
 
 
 ---
