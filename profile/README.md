@@ -50,8 +50,7 @@ Useful Links: https://www.youtube.com/watch?v=E0f9DUEN_jI&t=3s
 - Use snippets on the right of Postman App
 - Test different values
 
-
-
+##
 
 ### Swagger
 #### Quick Info
@@ -86,4 +85,26 @@ io.springfox -> springfox-boot-starter, version: 3.0.0
 
 For Swagger UI documentation, go to {port}/swagger-ui/ in your browser (the "/" being vital). You can also start HTTP requests from the interface without the need of Postman.
 
+##
+      
+### H2
+      
+**How to use**
+There are two options to test the local DB with H2-
+Option 1: Using the H2 Client
+Option 2: Using the web console 
+These options don't differ much. Just make sure you're on the right URL and port, and using the proper credentials, and you'll be fine. You can check them in Warehouse -> application.properties. 
+      
+**H2 Client**
+1. Download client here: https://www.h2database.com/html/download.html
+When using OS other than Windows, see https://o7planning.org/11895/install-h2-database-and-use-h2-console for help running the client.
+2. After starting the Spring App, run the H2 client and log in.
+      
+**Browser client**
+The Spring App is configured to enable using a browser client. 
+1. After starting the Spring App, go to {port}/console and log in. 
+      
+**Interacting with the database**
+After connecting to the H2DB, you should see three tables: component, product, and products_components. Currently, they should be empty after starting the app. You can run regular SQL commands to interact with the database, for example "SELECT * FROM component;" to see all components in the DB and their attributes. You can add data to the DB using SQL statements, it is recommended though that you use HTTP requests. For this, you can use Swagger UI or Postman. There are some predesigned  HTTP requests available to workspace members in Postman ready to use in the collection "Hibernate API test".
 
+      
