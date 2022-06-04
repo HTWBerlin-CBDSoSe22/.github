@@ -3,39 +3,30 @@
 ### Jira with Github
 - add the Jira issue key when commiting e.g. `git commit -m "PROJ-123 add a README file to the project."`
 - checkout a new branch with an issue key e.g. `git checkout -b JRA-123-<branch-name>`
-
-### IntelliJ
-- find and replace:
-- > command + R
-
-### REACT Bootstrap
-1. npx create-react-app << project name >>
-2. npm install react-bootstrap bootstrap
-3. add bootstrap styles: go to project and open public/index.html and insert the following in the head section below the last link section
-      <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-  
-### REACT Router
-1. npm instsall react-router-dom
-  
-Note: If you are using a npm version lower than 5.0.0 then add the "--save" flag to add the dependency to your package.json
-Note 2: Depending on version above or below 5, <Switch> and <Routes> sections changes: 
-        https://exerror.com/attempted-import-error-switch-is-not-exported-from-react-router-dom/
       
 ### Docker 
- Build Docker Image
+
+#### Docker Compose
+run docker-compose.yml (docker-compose file has to be in pwd)
+      
+      docker-compose up
+      
+(Container are automatically build)
+      
+#### CLI:
+ Build Docker Spring Image
       
       docker build -t springio/[NAME] .
       
- Run Image in Container
+ Run Spring Image in Container
       
       docker run -p [DOCKER PORT]:[LOCAL PORT] springio/[NAME]
+      
+ Run and install lightweight postgres image locally (password and username here as in warehouse app-prod.properties):
+      
+      docker run --name postgres_test_db -e POSTGRES_PASSWORD=test_password -e POSTGRES_USER=test_user -p 5432:5432 -d postgres:13.1-alpine
 
-
+ 
 
 
 ---
@@ -127,4 +118,21 @@ After connecting to the H2DB, you should see three tables: component, product, a
 
 You can add data to the DB using SQL statements, it is recommended though that you use HTTP requests. For this, you can use _Swagger UI_ or _Postman_. There are some predesigned  HTTP requests available to workspace members in Postman ready to use in the collection "Hibernate API test".
 
+### REACT Bootstrap
+1. npx create-react-app << project name >>
+2. npm install react-bootstrap bootstrap
+3. add bootstrap styles: go to project and open public/index.html and insert the following in the head section below the last link section
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  
+### REACT Router
+1. npm instsall react-router-dom
+  
+Note: If you are using a npm version lower than 5.0.0 then add the "--save" flag to add the dependency to your package.json
+Note 2: Depending on version above or below 5, <Switch> and <Routes> sections changes: 
+        https://exerror.com/attempted-import-error-switch-is-not-exported-from-react-router-dom/
       
