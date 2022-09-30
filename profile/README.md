@@ -26,8 +26,19 @@ run docker-compose.yml (docker-compose file has to be in pwd)
       
       docker run --name postgres_test_db -e POSTGRES_PASSWORD=test_password -e POSTGRES_USER=test_user -p 5432:5432 -d postgres:13.1-alpine
 
- 
 
+### Cypress
+ 
+Inside the application, add Cypress to the dev dependency by running the following command:
+
+      npm i cypress --save-dev
+      
+
+Use the following command to open cypress and start configurating everything:
+
+      cypress open
+      
+      
 
 ---
 
